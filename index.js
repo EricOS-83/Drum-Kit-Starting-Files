@@ -3,7 +3,7 @@ var numberOfButtons = document.querySelectorAll(".drum").length;
 for(var i = 0; i < numberOfButtons; i++){
 
   
-    document.querySelectorAll(".drum")[i].addEventListener("click", buttonAudio)
+document.querySelectorAll(".drum")[i].addEventListener("click", buttonAudio)
 
     
     function buttonAudio(){
@@ -30,6 +30,7 @@ for(var i = 0; i < numberOfButtons; i++){
             case "a":
                 var kick = new Audio("sounds/kick-bass.mp3");
                 kick.play();
+                break;
             case "s":
                 var snare = new Audio("sounds/snare.mp3");
                 snare.play();
